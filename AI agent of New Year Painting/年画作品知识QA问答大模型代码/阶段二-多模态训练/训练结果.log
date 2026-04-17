@@ -1,0 +1,23 @@
+训练前：
+{
+    "predict_bleu-4": 0.6288207207207208,
+    "predict_model_preparation_time": 0.0055,
+    "predict_rouge-1": 8.449639189189188,
+    "predict_rouge-2": 2.046493243243243,
+    "predict_rouge-l": 6.655421621621621,
+    "predict_runtime": 313.8942,
+    "predict_samples_per_second": 0.707,
+    "predict_steps_per_second": 0.354
+}
+
+训练后：
+{
+    "predict_bleu-4": 3.3655743243243244,
+    "predict_model_preparation_time": 0.0058,
+    "predict_rouge-1": 14.270463513513514,
+    "predict_rouge-2": 3.4763693693693694,
+    "predict_rouge-l": 13.12765990990991,
+    "predict_runtime": 42.7265,
+    "predict_samples_per_second": 5.196,
+    "predict_steps_per_second": 2.598
+}
