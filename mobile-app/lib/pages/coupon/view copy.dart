@@ -1,0 +1,291 @@
+import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
+
+class CouponPage extends StatefulWidget {
+  const CouponPage({super.key});
+
+  @override
+  State<CouponPage> createState() => _CouponPageState();
+}
+
+class _CouponPageState extends State<CouponPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_rounded),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+        title: Text('领取优惠券'),
+      ),
+      body: Column(
+        children: [
+          Container(
+            width: double.infinity,
+            margin: EdgeInsets.all(16),
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              gradient: LinearGradient(
+                colors: [Color(0xFFF48FB1), Color(0xFFE57373)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.05),
+                  blurRadius: 8,
+                  offset: Offset(0, 2),
+                ),
+              ],
+            ),
+            child: Stack(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '非遗文创 满减特惠',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 6),
+                    Text(
+                      '传统匠心 · 品质臻选',
+                      style: TextStyle(
+                        color: Colors.white.withOpacity(0.8),
+                        fontSize: 12,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 5,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      child: Text(
+                        '最高减300元',
+                        style: TextStyle(
+                          color: Color(0xFFE57373),
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Positioned(
+                  right: 12,
+                  bottom: 12,
+                  child: RotationTransition(
+                    turns: AlwaysStoppedAnimation(5 / 360),
+                    child: Icon(
+                      Icons.confirmation_num_rounded,
+                      size: 40,
+                      color: Colors.white.withOpacity(0.2),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          Expanded(
+            child: ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: EdgeInsets.only(bottom: 16.0),
+                  child: Container(
+                    height: 85.0,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8.0),
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.2),
+                          spreadRadius: 1,
+                          blurRadius: 5,
+                          offset: Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 100.0,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(8.0),
+                              bottomLeft: Radius.circular(8.0),
+                            ),
+                            gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [Color(0xFFf6c680), Color(0xFFB98D4E)],
+                            ),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '¥',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 14.0,
+                                    ),
+                                  ),
+                                  Text(
+                                    '100',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 26.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Text(
+                                '满100元可用',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 10.0,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        Container(
+                          width: 1.0,
+                          height: double.infinity,
+                          color: Colors.white,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                top: 0,
+                                left: -12.0,
+                                child: Container(
+                                  width: 24.0,
+                                  height: 12.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      bottomLeft: Radius.circular(12.0),
+                                      bottomRight: Radius.circular(12.0),
+                                    ),
+                                    color: Color(0xFFF6F6F6),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 0,
+                                left: -12.0,
+                                child: Container(
+                                  width: 24.0,
+                                  height: 12.0,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(12.0),
+                                      topRight: Radius.circular(12.0),
+                                    ),
+                                    color: Color(0xFFF6F6F6),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.all(12.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(8.0),
+                                bottomRight: Radius.circular(8.0),
+                              ),
+                              color: Colors.white,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  '测试',
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '领取后5天内有效',
+                                      style: TextStyle(
+                                        fontSize: 12.0,
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {},
+                                      child: Container(
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 12.0,
+                                          vertical: 4.0,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            16.0,
+                                          ),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topLeft,
+                                            end: Alignment.bottomRight,
+                                            colors: [
+                                              Color(0xFFf6c680),
+                                              Color(0xFFB98D4E),
+                                            ],
+                                          ),
+                                        ),
+                                        child: Text(
+                                          '立即领取',
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
