@@ -1,0 +1,354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-19 00:37+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: myapp/models.py:6
+msgid "Pending audit"
+msgstr "Pending audit"
+
+#: myapp/models.py:7
+msgid "Accepted"
+msgstr "Accepted"
+
+#: myapp/models.py:8 myapp/models.py:341
+msgid "Rejected"
+msgstr "Rejected"
+
+#: myapp/models.py:13
+msgid "Love"
+msgstr "Love"
+
+#: myapp/models.py:14
+msgid "Wealth"
+msgstr "Wealth"
+
+#: myapp/models.py:15
+msgid "Study"
+msgstr "Study"
+
+#: myapp/models.py:16
+msgid "Health"
+msgstr "Health"
+
+#: myapp/models.py:17
+msgid "Family"
+msgstr "Family"
+
+#: myapp/models.py:18
+msgid "Career"
+msgstr "Career"
+
+#: myapp/models.py:171
+msgid "Shop order"
+msgstr "Shop order"
+
+#: myapp/models.py:172
+msgid "Points Shop order"
+msgstr "Points Shop order"
+
+#: myapp/models.py:175
+msgid "To ship"
+msgstr "To ship"
+
+#: myapp/models.py:176
+msgid "To receive"
+msgstr "To receive"
+
+#: myapp/models.py:177 myapp/models.py:342
+msgid "Completed"
+msgstr "Completed"
+
+#: myapp/models.py:178
+msgid "Closed"
+msgstr "Closed"
+
+#: myapp/models.py:336
+msgid "Only refund"
+msgstr "Only refund"
+
+#: myapp/models.py:337
+msgid "Return and refund"
+msgstr "Return and refund"
+
+#: myapp/models.py:340
+msgid "In progress"
+msgstr "In progress"
+
+#: myapp/models.py:343
+msgid "Cancelled"
+msgstr "Cancelled"
+
+#: myapp/models.py:1030
+msgid "Browse painting"
+msgstr "Browse painting"
+
+#: myapp/models.py:1031
+msgid "Favorite painting"
+msgstr "Favorite painting"
+
+#: myapp/models.py:1032
+msgid "Comment painting"
+msgstr "Comment painting"
+
+#: myapp/models.py:1033 myapp/models.py:1034
+msgid "Use points for order"
+msgstr "Points Shop order"
+
+#: myapp/models.py:1035
+msgid "Gives points"
+msgstr "Gives points"
+
+#: myapp/models.py:1036
+msgid "Refund points"
+msgstr "Refund points"
+
+#: myapp/views/address.py:14 myapp/views/address.py:56 myapp/views/ai.py:189
+#: myapp/views/order.py:73 myapp/views/order.py:136 myapp/views/order.py:165
+#: myapp/views/order.py:290 myapp/views/painting.py:32
+#: myapp/views/painting.py:49 myapp/views/painting.py:97
+#: myapp/views/painting.py:169 myapp/views/painting.py:210
+#: myapp/views/painting.py:403 myapp/views/painting.py:415
+#: myapp/views/painting.py:427 myapp/views/points.py:60
+#: myapp/views/points.py:193 myapp/views/points.py:210
+#: myapp/views/points.py:229 myapp/views/posts.py:23 myapp/views/posts.py:78
+#: myapp/views/posts.py:265 myapp/views/posts.py:308 myapp/views/posts.py:426
+#: myapp/views/refund_order.py:32 myapp/views/refund_order.py:71
+#: myapp/views/shop.py:17 myapp/views/shop.py:34 myapp/views/shop.py:73
+#: myapp/views/shop.py:85 myapp/views/shop.py:109 myapp/views/shop.py:190
+#: myapp/views/shop.py:260 myapp/views/user.py:116 myapp/views/user.py:227
+#: myapp/views/wish.py:17
+msgid "Query successful"
+msgstr "Query successful"
+
+#: myapp/views/address.py:46 myapp/views/address.py:85
+#: myapp/views/address.py:100 myapp/views/ai.py:37 myapp/views/ai.py:39
+#: myapp/views/ai.py:230 myapp/views/ai.py:335 myapp/views/order.py:53
+#: myapp/views/order.py:108 myapp/views/order.py:475 myapp/views/order.py:672
+#: myapp/views/order.py:795 myapp/views/painting.py:253
+#: myapp/views/painting.py:272 myapp/views/painting.py:300
+#: myapp/views/painting.py:323 myapp/views/painting.py:338
+#: myapp/views/points.py:181 myapp/views/posts.py:182 myapp/views/posts.py:200
+#: myapp/views/posts.py:334 myapp/views/posts.py:353 myapp/views/posts.py:375
+#: myapp/views/posts.py:391 myapp/views/refund_order.py:194
+#: myapp/views/refund_order.py:237 myapp/views/refund_order.py:287
+#: myapp/views/shop.py:150 myapp/views/shop.py:178 myapp/views/shop.py:250
+#: myapp/views/user.py:158 myapp/views/user.py:186 myapp/views/user.py:209
+msgid "Operation successful"
+msgstr "Operation successful"
+
+#: myapp/views/address.py:54 myapp/views/address.py:96 myapp/views/order.py:31
+#: myapp/views/order.py:65 myapp/views/order.py:120 myapp/views/order.py:277
+#: myapp/views/order.py:512 myapp/views/order.py:692
+#: myapp/views/painting.py:114 myapp/views/painting.py:187
+#: myapp/views/painting.py:245 myapp/views/painting.py:268
+#: myapp/views/painting.py:289 myapp/views/painting.py:313
+#: myapp/views/painting.py:364 myapp/views/points.py:81
+#: myapp/views/points.py:227 myapp/views/posts.py:135 myapp/views/posts.py:195
+#: myapp/views/posts.py:210 myapp/views/posts.py:284 myapp/views/posts.py:327
+#: myapp/views/posts.py:349 myapp/views/posts.py:365
+#: myapp/views/refund_order.py:28 myapp/views/refund_order.py:105
+#: myapp/views/refund_order.py:132 myapp/views/refund_order.py:212
+#: myapp/views/refund_order.py:262 myapp/views/shop.py:49
+#: myapp/views/shop.py:124 myapp/views/shop.py:240
+msgid "Data does not exist"
+msgstr "Data does not exist"
+
+#: myapp/views/ai.py:50 myapp/views/ai.py:52 myapp/views/ai.py:57
+#: myapp/views/ai.py:67
+msgid "Chat failed"
+msgstr "Chat failed"
+
+#: myapp/views/ai.py:104
+msgid "Chat successful"
+msgstr "Chat successful"
+
+#: myapp/views/ai.py:147 myapp/views/order.py:150 myapp/views/painting.py:51
+#: myapp/views/posts.py:83
+msgid "Query failed"
+msgstr "Query failed"
+
+#: myapp/views/ai.py:240 myapp/views/ai.py:250 myapp/views/ai.py:265
+#: myapp/views/ai.py:273 myapp/views/ai.py:345 myapp/views/order.py:92
+#: myapp/views/painting.py:233 myapp/views/painting.py:298
+#: myapp/views/painting.py:321 myapp/views/painting.py:334
+#: myapp/views/points.py:84 myapp/views/points.py:115 myapp/views/points.py:121
+#: myapp/views/points.py:130 myapp/views/points.py:137
+#: myapp/views/points.py:146 myapp/views/points.py:153
+#: myapp/views/points.py:173 myapp/views/posts.py:145 myapp/views/posts.py:155
+#: myapp/views/posts.py:160 myapp/views/posts.py:178 myapp/views/posts.py:322
+#: myapp/views/posts.py:373 myapp/views/posts.py:387
+#: myapp/views/refund_order.py:100 myapp/views/shop.py:144
+#: myapp/views/shop.py:168 myapp/views/shop.py:246
+msgid "Operation failed"
+msgstr "Operation failed"
+
+#: myapp/views/file.py:35
+msgid "Upload successful"
+msgstr "Upload successful"
+
+#: myapp/views/order.py:34 myapp/views/order.py:221 myapp/views/order.py:337
+#: myapp/views/order.py:393 myapp/views/order.py:542 myapp/views/order.py:589
+#: myapp/views/order.py:696 myapp/views/order.py:698 myapp/views/order.py:700
+#: myapp/views/order.py:709 myapp/views/refund_order.py:113
+#: myapp/views/refund_order.py:115 myapp/views/refund_order.py:134
+#: myapp/views/refund_order.py:164 myapp/views/refund_order.py:223
+#: myapp/views/refund_order.py:273 myapp/views/user.py:196
+#: myapp/views/user.py:207
+msgid "Please refresh the page and try again"
+msgstr "Please refresh the page and try again"
+
+#: myapp/views/order.py:106 myapp/views/order.py:471 myapp/views/order.py:668
+#: myapp/views/order.py:791 myapp/views/points.py:177
+#: myapp/views/refund_order.py:193 myapp/views/refund_order.py:235
+#: myapp/views/refund_order.py:285 myapp/views/shop.py:146
+#: myapp/views/user.py:142
+msgid "Operation exception"
+msgstr "Operation exception"
+
+#: myapp/views/order.py:226 myapp/views/order.py:234 myapp/views/order.py:520
+msgid "Please select items from the cart"
+msgstr "Please select items from the cart"
+
+#: myapp/views/order.py:322 myapp/views/order.py:498
+#, python-format
+msgid "You can use up to %(max_num)s points at most"
+msgstr "You can use up to %(max_num)s points at most"
+
+#: myapp/views/order.py:363 myapp/views/order.py:561
+msgid "Coupon usage conditions are not met"
+msgstr "Coupon usage conditions are not met"
+
+#: myapp/views/order.py:370 myapp/views/order.py:372 myapp/views/order.py:568
+#: myapp/views/order.py:570
+msgid "Coupon is unavailable"
+msgstr "Coupon is unavailable"
+
+#: myapp/views/order.py:378 myapp/views/order.py:575
+msgid "The current configuration does not allow the use of points deduction"
+msgstr "The current configuration does not allow the use of points deduction"
+
+#: myapp/views/order.py:381 myapp/views/order.py:578 myapp/views/order.py:716
+msgid "Your normal points are insufficient"
+msgstr "Your normal points are insufficient"
+
+#: myapp/views/order.py:387 myapp/views/order.py:583
+#, python-format
+msgid ""
+"The discount amount cannot exceed %(max)s yuan, and you can use up to "
+"%(points)s points"
+msgstr ""
+"The discount amount cannot exceed %(max)s yuan, and you can use up to "
+"%(points)s points"
+
+#: myapp/views/order.py:718
+msgid "Your cultural points are insufficient"
+msgstr "Your cultural points are insufficient"
+
+#: myapp/views/painting.py:103 myapp/views/posts.py:430
+msgid "Query exception"
+msgstr "Query exception"
+
+#: myapp/views/painting.py:231
+msgid "Comment content cannot be empty"
+msgstr "Comment content cannot be empty"
+
+#: myapp/views/painting.py:358 myapp/views/posts.py:105
+#: myapp/views/posts.py:157 myapp/views/refund_order.py:88
+#: myapp/views/refund_order.py:250
+msgid "Parameter error"
+msgstr "Parameter error"
+
+#: myapp/views/points.py:113
+msgid "The daily limit has been reached"
+msgstr "The daily limit has been reached"
+
+#: myapp/views/posts.py:101
+msgid "Please select a category"
+msgstr "Please select a category"
+
+#: myapp/views/posts.py:225 myapp/views/user.py:49
+msgid "User does not exist"
+msgstr "User does not exist"
+
+#: myapp/views/refund_order.py:146 myapp/views/refund_order.py:171
+msgid "There is an unprocessed refund service for this order"
+msgstr "There is an unprocessed refund service for this order"
+
+#: myapp/views/refund_order.py:155
+msgid "There is an unprocessed refund service for the products in this order"
+msgstr "There is an unprocessed refund service for the products in this order"
+
+#: myapp/views/refund_order.py:188
+msgid "Order does not exist or status is invalid"
+msgstr "Order does not exist or status is invalid"
+
+#: myapp/views/shop.py:205
+msgid "You have already received this coupon"
+msgstr "You have already received this coupon"
+
+#: myapp/views/shop.py:225
+msgid "Coupons have been received or deleted"
+msgstr "Coupons have been received or deleted"
+
+#: myapp/views/shop.py:242
+msgid "Failed to receive: Duplicate receipt"
+msgstr "Failed to receive: Duplicate receipt"
+
+#: myapp/views/user.py:37 myapp/views/user.py:75
+msgid "Phone number or email cannot be empty"
+msgstr "Phone number or email cannot be empty"
+
+#: myapp/views/user.py:39 myapp/views/user.py:77 myapp/views/user.py:170
+msgid "Password cannot be empty"
+msgstr "Password cannot be empty"
+
+#: myapp/views/user.py:41 myapp/views/user.py:79 myapp/views/user.py:172
+msgid "Password must be at least 6 characters"
+msgstr "Password must be at least 6 characters"
+
+#: myapp/views/user.py:52
+msgid "Incorrect password"
+msgstr "Incorrect password"
+
+#: myapp/views/user.py:60
+msgid "Login successful"
+msgstr "Login successful"
+
+#: myapp/views/user.py:82
+msgid "You can only register with either a phone number or an email"
+msgstr "You can only register with either a phone number or an email"
+
+#: myapp/views/user.py:86
+msgid "This phone number has already been registered"
+msgstr "This phone number has already been registered"
+
+#: myapp/views/user.py:90
+msgid "This email address has already been registered"
+msgstr "This email address has already been registered"
+
+#: myapp/views/user.py:100
+msgid "Register successful"
+msgstr "Register successful"
+
+#: myapp/views/user.py:178
+msgid "Old password is incorrect"
+msgstr "Old password is incorrect"
+
+#: myapp/views/user.py:180
+msgid "The new password cannot be the same as the old password"
+msgstr "The new password cannot be the same as the old password"

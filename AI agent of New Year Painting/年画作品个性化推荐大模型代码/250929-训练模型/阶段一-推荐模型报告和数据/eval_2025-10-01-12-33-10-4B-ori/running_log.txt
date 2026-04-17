@@ -1,0 +1,193 @@
+[INFO|2025-10-01 14:27:08] tokenization_utils_base.py:2066 >> loading file vocab.json
+[INFO|2025-10-01 14:27:08] tokenization_utils_base.py:2066 >> loading file merges.txt
+[INFO|2025-10-01 14:27:08] tokenization_utils_base.py:2066 >> loading file tokenizer.json
+[INFO|2025-10-01 14:27:08] tokenization_utils_base.py:2066 >> loading file added_tokens.json
+[INFO|2025-10-01 14:27:08] tokenization_utils_base.py:2066 >> loading file special_tokens_map.json
+[INFO|2025-10-01 14:27:08] tokenization_utils_base.py:2066 >> loading file tokenizer_config.json
+[INFO|2025-10-01 14:27:08] tokenization_utils_base.py:2066 >> loading file chat_template.jinja
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2337 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2025-10-01 14:27:09] configuration_utils.py:763 >> loading configuration file /root/autodl-tmp/qwen3-4B-Instruct/config.json
+[INFO|2025-10-01 14:27:09] configuration_utils.py:839 >> Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 2560,
+  "initializer_range": 0.02,
+  "intermediate_size": 9728,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 262144,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 5000000,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.56.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2066 >> loading file vocab.json
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2066 >> loading file merges.txt
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2066 >> loading file tokenizer.json
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2066 >> loading file added_tokens.json
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2066 >> loading file special_tokens_map.json
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2066 >> loading file tokenizer_config.json
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2066 >> loading file chat_template.jinja
+[INFO|2025-10-01 14:27:09] tokenization_utils_base.py:2337 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2025-10-01 14:27:09] logging.py:143 >> Loading dataset qwen3_val.jsonl...
+[INFO|2025-10-01 14:27:10] configuration_utils.py:763 >> loading configuration file /root/autodl-tmp/qwen3-4B-Instruct/config.json
+[INFO|2025-10-01 14:27:10] configuration_utils.py:839 >> Model config Qwen3Config {
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 2560,
+  "initializer_range": 0.02,
+  "intermediate_size": 9728,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 262144,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 5000000,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "transformers_version": "4.56.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[WARNING|2025-10-01 14:27:10] logging.py:328 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO|2025-10-01 14:27:10] logging.py:143 >> KV cache is enabled for faster generation.
+[WARNING|2025-10-01 14:27:10] logging.py:328 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO|2025-10-01 14:27:10] modeling_utils.py:1277 >> loading weights file /root/autodl-tmp/qwen3-4B-Instruct/model.safetensors.index.json
+[INFO|2025-10-01 14:27:10] modeling_utils.py:2466 >> Instantiating Qwen3ForCausalLM model under default dtype torch.bfloat16.
+[INFO|2025-10-01 14:27:10] configuration_utils.py:1055 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645
+}
+
+[INFO|2025-10-01 14:27:12] modeling_utils.py:5721 >> All model checkpoint weights were used when initializing Qwen3ForCausalLM.
+
+[INFO|2025-10-01 14:27:12] modeling_utils.py:5729 >> All the weights of Qwen3ForCausalLM were initialized from the model checkpoint at /root/autodl-tmp/qwen3-4B-Instruct.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen3ForCausalLM for predictions without further training.
+[INFO|2025-10-01 14:27:12] configuration_utils.py:1008 >> loading configuration file /root/autodl-tmp/qwen3-4B-Instruct/generation_config.json
+[INFO|2025-10-01 14:27:12] configuration_utils.py:1055 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "temperature": 0.7,
+  "top_k": 20,
+  "top_p": 0.8
+}
+
+[INFO|2025-10-01 14:27:12] logging.py:143 >> Using torch SDPA for faster training and inference.
+[INFO|2025-10-01 14:27:12] logging.py:143 >> all params: 4,022,468,096
+[WARNING|2025-10-01 14:27:12] logging.py:154 >> Batch generation can be very slow. Consider using `scripts/vllm_infer.py` instead.
+[INFO|2025-10-01 14:27:12] trainer.py:4623 >> 
+***** Running Prediction *****
+[INFO|2025-10-01 14:27:12] trainer.py:4625 >>   Num examples = 493
+[INFO|2025-10-01 14:27:12] trainer.py:4628 >>   Batch size = 2
+[INFO|2025-10-01 15:24:38] logging.py:143 >> Saving prediction results to saves/Qwen3-4B-Instruct-2507/lora/eval_2025-10-01-12-33-10-4B-ori/generated_predictions.jsonl

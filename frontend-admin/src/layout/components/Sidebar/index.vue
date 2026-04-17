@@ -1,0 +1,40 @@
+<template>
+  <div class="has-logo">
+    <logo />
+    <el-scrollbar wrap-class="scrollbar-wrapper">
+      <el-menu :default-active="activeMenu" :collapse="false" :background-color="getCssVar('--menuBg')"
+        :text-color="getCssVar('--menuText')" :unique-opened="false" :active-text-color="getCssVar('--menuActiveText')"
+        :collapse-transition="false" mode="vertical">
+        <sidebar-item v-for="route in routes" :key="route.path" :item="route" :base-path="route.path" />
+      </el-menu>
+    </el-scrollbar>
+  </div>
+</template>
+
+<script>
+import Logo from './Logo'
+import SidebarItem from './SidebarItem'
+
+export default {
+  components: { SidebarItem, Logo },
+  computed: {
+    routes() {
+      return this.$router.options.routes
+    },
+    activeMenu() {
+      const route = this.$route
+      const { meta, path } = route
+      // if set path, the sidebar will highlight the path you set
+      if (meta.activeMenu) {
+        return meta.activeMenu
+      }
+      return path
+    },
+  },
+  methods: {
+    getCssVar(varName) {
+      return getComputedStyle(document.documentElement).getPropertyValue(varName).trim()
+    }
+  }
+}
+</script>

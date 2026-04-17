@@ -1,0 +1,912 @@
+[INFO|2025-10-05 13:49:47] tokenization_utils_base.py:2066 >> loading file vocab.json
+[INFO|2025-10-05 13:49:47] tokenization_utils_base.py:2066 >> loading file merges.txt
+[INFO|2025-10-05 13:49:47] tokenization_utils_base.py:2066 >> loading file tokenizer.json
+[INFO|2025-10-05 13:49:47] tokenization_utils_base.py:2066 >> loading file added_tokens.json
+[INFO|2025-10-05 13:49:47] tokenization_utils_base.py:2066 >> loading file special_tokens_map.json
+[INFO|2025-10-05 13:49:47] tokenization_utils_base.py:2066 >> loading file tokenizer_config.json
+[INFO|2025-10-05 13:49:47] tokenization_utils_base.py:2066 >> loading file chat_template.jinja
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2337 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2025-10-05 13:49:48] image_processing_base.py:374 >> loading configuration file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/preprocessor_config.json
+[INFO|2025-10-05 13:49:48] image_processing_base.py:374 >> loading configuration file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/preprocessor_config.json
+[INFO|2025-10-05 13:49:48] image_processing_base.py:421 >> Image processor Qwen2VLImageProcessorFast {
+  "crop_size": null,
+  "data_format": "channels_first",
+  "default_to_square": true,
+  "device": null,
+  "disable_grouping": null,
+  "do_center_crop": null,
+  "do_convert_rgb": true,
+  "do_normalize": true,
+  "do_rescale": true,
+  "do_resize": true,
+  "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "image_processor_type": "Qwen2VLImageProcessorFast",
+  "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "input_data_format": null,
+  "max_pixels": 12845056,
+  "merge_size": 2,
+  "min_pixels": 3136,
+  "patch_size": 14,
+  "processor_class": "Qwen2_5_VLProcessor",
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "return_tensors": null,
+  "size": {
+    "longest_edge": 12845056,
+    "shortest_edge": 3136
+  },
+  "temporal_patch_size": 2
+}
+
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2066 >> loading file vocab.json
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2066 >> loading file merges.txt
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2066 >> loading file tokenizer.json
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2066 >> loading file added_tokens.json
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2066 >> loading file special_tokens_map.json
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2066 >> loading file tokenizer_config.json
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2066 >> loading file chat_template.jinja
+[INFO|2025-10-05 13:49:48] tokenization_utils_base.py:2337 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2025-10-05 13:49:48] video_processing_utils.py:727 >> loading configuration file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/preprocessor_config.json
+[INFO|2025-10-05 13:49:48] video_processing_utils.py:773 >> Video processor Qwen2VLVideoProcessor {
+  "crop_size": null,
+  "data_format": "channels_first",
+  "default_to_square": true,
+  "device": null,
+  "do_center_crop": null,
+  "do_convert_rgb": true,
+  "do_normalize": true,
+  "do_pad": null,
+  "do_rescale": true,
+  "do_resize": true,
+  "do_sample_frames": false,
+  "fps": null,
+  "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "input_data_format": null,
+  "max_frames": 768,
+  "max_pixels": 12845056,
+  "merge_size": 2,
+  "min_frames": 4,
+  "min_pixels": 3136,
+  "num_frames": null,
+  "patch_size": 14,
+  "processor_class": "Qwen2_5_VLProcessor",
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "return_metadata": false,
+  "size": {
+    "longest_edge": 12845056,
+    "shortest_edge": 3136
+  },
+  "size_divisor": null,
+  "temporal_patch_size": 2,
+  "video_metadata": null,
+  "video_processor_type": "Qwen2VLVideoProcessor"
+}
+
+[INFO|2025-10-05 13:49:48] processing_utils.py:1051 >> loading configuration file None
+[INFO|2025-10-05 13:49:48] processing_utils.py:1136 >> Processor Qwen2_5_VLProcessor:
+- image_processor: Qwen2VLImageProcessorFast {
+  "crop_size": null,
+  "data_format": "channels_first",
+  "default_to_square": true,
+  "device": null,
+  "disable_grouping": null,
+  "do_center_crop": null,
+  "do_convert_rgb": true,
+  "do_normalize": true,
+  "do_rescale": true,
+  "do_resize": true,
+  "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "image_processor_type": "Qwen2VLImageProcessorFast",
+  "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "input_data_format": null,
+  "max_pixels": 12845056,
+  "merge_size": 2,
+  "min_pixels": 3136,
+  "patch_size": 14,
+  "processor_class": "Qwen2_5_VLProcessor",
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "return_tensors": null,
+  "size": {
+    "longest_edge": 12845056,
+    "shortest_edge": 3136
+  },
+  "temporal_patch_size": 2
+}
+
+- tokenizer: Qwen2TokenizerFast(name_or_path='/root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct', vocab_size=151643, model_max_length=131072, is_fast=True, padding_side='right', truncation_side='right', special_tokens={'eos_token': '<|im_end|>', 'pad_token': '<|endoftext|>', 'additional_special_tokens': ['<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|object_ref_end|>', '<|box_start|>', '<|box_end|>', '<|quad_start|>', '<|quad_end|>', '<|vision_start|>', '<|vision_end|>', '<|vision_pad|>', '<|image_pad|>', '<|video_pad|>']}, clean_up_tokenization_spaces=False, added_tokens_decoder={
+	151643: AddedToken("<|endoftext|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151644: AddedToken("<|im_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151645: AddedToken("<|im_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151646: AddedToken("<|object_ref_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151647: AddedToken("<|object_ref_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151648: AddedToken("<|box_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151649: AddedToken("<|box_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151650: AddedToken("<|quad_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151651: AddedToken("<|quad_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151652: AddedToken("<|vision_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151653: AddedToken("<|vision_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151654: AddedToken("<|vision_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151655: AddedToken("<|image_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151656: AddedToken("<|video_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151657: AddedToken("<tool_call>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=False),
+	151658: AddedToken("</tool_call>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=False),
+	151659: AddedToken("<|fim_prefix|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=False),
+	151660: AddedToken("<|fim_middle|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=False),
+	151661: AddedToken("<|fim_suffix|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=False),
+	151662: AddedToken("<|fim_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=False),
+	151663: AddedToken("<|repo_name|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=False),
+	151664: AddedToken("<|file_sep|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=False),
+}
+)
+- video_processor: Qwen2VLVideoProcessor {
+  "crop_size": null,
+  "data_format": "channels_first",
+  "default_to_square": true,
+  "device": null,
+  "do_center_crop": null,
+  "do_convert_rgb": true,
+  "do_normalize": true,
+  "do_pad": null,
+  "do_rescale": true,
+  "do_resize": true,
+  "do_sample_frames": false,
+  "fps": null,
+  "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "input_data_format": null,
+  "max_frames": 768,
+  "max_pixels": 12845056,
+  "merge_size": 2,
+  "min_frames": 4,
+  "min_pixels": 3136,
+  "num_frames": null,
+  "patch_size": 14,
+  "processor_class": "Qwen2_5_VLProcessor",
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "return_metadata": false,
+  "size": {
+    "longest_edge": 12845056,
+    "shortest_edge": 3136
+  },
+  "size_divisor": null,
+  "temporal_patch_size": 2,
+  "video_metadata": null,
+  "video_processor_type": "Qwen2VLVideoProcessor"
+}
+
+
+{
+  "processor_class": "Qwen2_5_VLProcessor"
+}
+
+[INFO|2025-10-05 13:49:48] logging.py:143 >> Loading dataset qa_train.jsonl...
+[INFO|2025-10-05 13:49:49] configuration_utils.py:763 >> loading configuration file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/config.json
+[INFO|2025-10-05 13:49:49] configuration_utils.py:839 >> Model config Qwen2_5_VLConfig {
+  "architectures": [
+    "Qwen2_5_VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 128000,
+  "max_window_layers": 70,
+  "model_type": "qwen2_5_vl",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "text_config": {
+    "architectures": [
+      "Qwen2_5_VLForConditionalGeneration"
+    ],
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "dtype": "bfloat16",
+    "eos_token_id": 151645,
+    "hidden_act": "silu",
+    "hidden_size": 2048,
+    "image_token_id": null,
+    "initializer_range": 0.02,
+    "intermediate_size": 11008,
+    "layer_types": [
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention"
+    ],
+    "max_position_embeddings": 128000,
+    "max_window_layers": 70,
+    "model_type": "qwen2_5_vl_text",
+    "num_attention_heads": 16,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 2,
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": {
+      "mrope_section": [
+        16,
+        24,
+        24
+      ],
+      "rope_type": "default",
+      "type": "default"
+    },
+    "rope_theta": 1000000.0,
+    "sliding_window": null,
+    "tie_word_embeddings": true,
+    "use_cache": true,
+    "use_sliding_window": false,
+    "video_token_id": null,
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652,
+    "vision_token_id": 151654,
+    "vocab_size": 151936
+  },
+  "transformers_version": "4.56.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "depth": 32,
+    "fullatt_block_indexes": [
+      7,
+      15,
+      23,
+      31
+    ],
+    "hidden_act": "silu",
+    "hidden_size": 1280,
+    "in_channels": 3,
+    "in_chans": 3,
+    "initializer_range": 0.02,
+    "intermediate_size": 3420,
+    "model_type": "qwen2_5_vl",
+    "num_heads": 16,
+    "out_hidden_size": 2048,
+    "patch_size": 14,
+    "spatial_merge_size": 2,
+    "spatial_patch_size": 14,
+    "temporal_patch_size": 2,
+    "tokens_per_second": 2,
+    "window_size": 112
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 151936
+}
+
+[INFO|2025-10-05 13:49:49] logging.py:143 >> KV cache is disabled during training.
+[WARNING|2025-10-05 13:49:49] logging.py:328 >> `torch_dtype` is deprecated! Use `dtype` instead!
+[INFO|2025-10-05 13:49:49] modeling_utils.py:1277 >> loading weights file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/model.safetensors.index.json
+[INFO|2025-10-05 13:49:49] modeling_utils.py:2466 >> Instantiating Qwen2_5_VLForConditionalGeneration model under default dtype torch.bfloat16.
+[INFO|2025-10-05 13:49:49] configuration_utils.py:1055 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "use_cache": false
+}
+
+[INFO|2025-10-05 13:49:49] modeling_utils.py:2466 >> Instantiating Qwen2_5_VisionTransformerPretrainedModel model under default dtype torch.bfloat16.
+[INFO|2025-10-05 13:49:49] modeling_utils.py:2466 >> Instantiating Qwen2_5_VLTextModel model under default dtype torch.bfloat16.
+[INFO|2025-10-05 13:49:51] modeling_utils.py:5721 >> All model checkpoint weights were used when initializing Qwen2_5_VLForConditionalGeneration.
+
+[INFO|2025-10-05 13:49:51] modeling_utils.py:5729 >> All the weights of Qwen2_5_VLForConditionalGeneration were initialized from the model checkpoint at /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen2_5_VLForConditionalGeneration for predictions without further training.
+[INFO|2025-10-05 13:49:51] configuration_utils.py:1008 >> loading configuration file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/generation_config.json
+[INFO|2025-10-05 13:49:51] configuration_utils.py:1055 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "repetition_penalty": 1.05,
+  "temperature": 1e-06
+}
+
+[INFO|2025-10-05 13:49:51] logging.py:143 >> Gradient checkpointing enabled.
+[INFO|2025-10-05 13:49:51] logging.py:143 >> Using torch SDPA for faster training and inference.
+[INFO|2025-10-05 13:49:51] logging.py:143 >> Upcasting trainable params to float32.
+[INFO|2025-10-05 13:49:51] logging.py:143 >> Fine-tuning method: LoRA
+[INFO|2025-10-05 13:49:51] logging.py:143 >> Found linear modules: gate_proj,k_proj,up_proj,v_proj,down_proj,o_proj,q_proj
+[INFO|2025-10-05 13:49:51] logging.py:143 >> Set vision model not trainable: ['visual.patch_embed', 'visual.blocks'].
+[INFO|2025-10-05 13:49:51] logging.py:143 >> Set multi model projector not trainable: visual.merger.
+[INFO|2025-10-05 13:49:51] logging.py:143 >> trainable params: 14,966,784 || all params: 3,769,589,760 || trainable%: 0.3970
+[INFO|2025-10-05 13:49:51] trainer.py:757 >> Using auto half precision backend
+[WARNING|2025-10-05 13:49:51] trainer.py:985 >> The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+[INFO|2025-10-05 13:49:52] trainer.py:2523 >> ***** Running training *****
+[INFO|2025-10-05 13:49:52] trainer.py:2524 >>   Num examples = 1,998
+[INFO|2025-10-05 13:49:52] trainer.py:2525 >>   Num Epochs = 5
+[INFO|2025-10-05 13:49:52] trainer.py:2526 >>   Instantaneous batch size per device = 8
+[INFO|2025-10-05 13:49:52] trainer.py:2529 >>   Total train batch size (w. parallel, distributed & accumulation) = 64
+[INFO|2025-10-05 13:49:52] trainer.py:2530 >>   Gradient Accumulation steps = 8
+[INFO|2025-10-05 13:49:52] trainer.py:2531 >>   Total optimization steps = 160
+[INFO|2025-10-05 13:49:52] trainer.py:2532 >>   Number of trainable parameters = 14,966,784
+[INFO|2025-10-05 13:50:02] logging.py:143 >> {'loss': 2.8458, 'learning_rate': 4.9923e-05, 'epoch': 0.16, 'throughput': 3179.89}
+[INFO|2025-10-05 13:50:11] logging.py:143 >> {'loss': 2.6418, 'learning_rate': 4.9611e-05, 'epoch': 0.32, 'throughput': 3319.82}
+[INFO|2025-10-05 13:50:20] logging.py:143 >> {'loss': 2.4656, 'learning_rate': 4.9061e-05, 'epoch': 0.48, 'throughput': 3365.02}
+[INFO|2025-10-05 13:50:30] logging.py:143 >> {'loss': 2.3235, 'learning_rate': 4.8280e-05, 'epoch': 0.64, 'throughput': 3387.18}
+[INFO|2025-10-05 13:50:39] logging.py:143 >> {'loss': 2.1893, 'learning_rate': 4.7275e-05, 'epoch': 0.80, 'throughput': 3390.87}
+[INFO|2025-10-05 13:50:49] logging.py:143 >> {'loss': 2.1399, 'learning_rate': 4.6055e-05, 'epoch': 0.96, 'throughput': 3400.24}
+[INFO|2025-10-05 13:50:56] logging.py:143 >> {'loss': 2.0630, 'learning_rate': 4.4633e-05, 'epoch': 1.10, 'throughput': 3398.83}
+[INFO|2025-10-05 13:51:06] logging.py:143 >> {'loss': 2.0082, 'learning_rate': 4.3021e-05, 'epoch': 1.26, 'throughput': 3399.35}
+[INFO|2025-10-05 13:51:15] logging.py:143 >> {'loss': 1.9790, 'learning_rate': 4.1236e-05, 'epoch': 1.42, 'throughput': 3406.42}
+[INFO|2025-10-05 13:51:25] logging.py:143 >> {'loss': 1.9346, 'learning_rate': 3.9295e-05, 'epoch': 1.58, 'throughput': 3410.79}
+[INFO|2025-10-05 13:51:34] logging.py:143 >> {'loss': 1.8884, 'learning_rate': 3.7216e-05, 'epoch': 1.74, 'throughput': 3413.38}
+[INFO|2025-10-05 13:51:43] logging.py:143 >> {'loss': 1.8977, 'learning_rate': 3.5019e-05, 'epoch': 1.90, 'throughput': 3417.22}
+[INFO|2025-10-05 13:51:51] logging.py:143 >> {'loss': 1.8446, 'learning_rate': 3.2725e-05, 'epoch': 2.03, 'throughput': 3415.28}
+[INFO|2025-10-05 13:52:01] logging.py:143 >> {'loss': 1.7511, 'learning_rate': 3.0358e-05, 'epoch': 2.19, 'throughput': 3418.97}
+[INFO|2025-10-05 13:52:10] logging.py:143 >> {'loss': 1.8347, 'learning_rate': 2.7938e-05, 'epoch': 2.35, 'throughput': 3416.65}
+[INFO|2025-10-05 13:52:19] logging.py:143 >> {'loss': 1.7622, 'learning_rate': 2.5491e-05, 'epoch': 2.51, 'throughput': 3412.15}
+[INFO|2025-10-05 13:52:29] logging.py:143 >> {'loss': 1.7531, 'learning_rate': 2.3039e-05, 'epoch': 2.67, 'throughput': 3413.88}
+[INFO|2025-10-05 13:52:38] logging.py:143 >> {'loss': 1.7303, 'learning_rate': 2.0605e-05, 'epoch': 2.83, 'throughput': 3414.62}
+[INFO|2025-10-05 13:52:48] logging.py:143 >> {'loss': 1.7112, 'learning_rate': 1.8214e-05, 'epoch': 2.99, 'throughput': 3414.77}
+[INFO|2025-10-05 13:52:56] logging.py:143 >> {'loss': 1.6862, 'learning_rate': 1.5888e-05, 'epoch': 3.13, 'throughput': 3416.50}
+[INFO|2025-10-05 13:52:56] trainer.py:4289 >> Saving model checkpoint to saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100
+[INFO|2025-10-05 13:52:56] configuration_utils.py:763 >> loading configuration file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/config.json
+[INFO|2025-10-05 13:52:56] configuration_utils.py:839 >> Model config Qwen2_5_VLConfig {
+  "architectures": [
+    "Qwen2_5_VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 128000,
+  "max_window_layers": 70,
+  "model_type": "qwen2_5_vl",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "text_config": {
+    "architectures": [
+      "Qwen2_5_VLForConditionalGeneration"
+    ],
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "dtype": "bfloat16",
+    "eos_token_id": 151645,
+    "hidden_act": "silu",
+    "hidden_size": 2048,
+    "image_token_id": null,
+    "initializer_range": 0.02,
+    "intermediate_size": 11008,
+    "layer_types": [
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention"
+    ],
+    "max_position_embeddings": 128000,
+    "max_window_layers": 70,
+    "model_type": "qwen2_5_vl_text",
+    "num_attention_heads": 16,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 2,
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": {
+      "mrope_section": [
+        16,
+        24,
+        24
+      ],
+      "rope_type": "default",
+      "type": "default"
+    },
+    "rope_theta": 1000000.0,
+    "sliding_window": null,
+    "tie_word_embeddings": true,
+    "use_cache": true,
+    "use_sliding_window": false,
+    "video_token_id": null,
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652,
+    "vision_token_id": 151654,
+    "vocab_size": 151936
+  },
+  "transformers_version": "4.56.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "depth": 32,
+    "fullatt_block_indexes": [
+      7,
+      15,
+      23,
+      31
+    ],
+    "hidden_act": "silu",
+    "hidden_size": 1280,
+    "in_channels": 3,
+    "in_chans": 3,
+    "initializer_range": 0.02,
+    "intermediate_size": 3420,
+    "model_type": "qwen2_5_vl",
+    "num_heads": 16,
+    "out_hidden_size": 2048,
+    "patch_size": 14,
+    "spatial_merge_size": 2,
+    "spatial_patch_size": 14,
+    "temporal_patch_size": 2,
+    "tokens_per_second": 2,
+    "window_size": 112
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 151936
+}
+
+[INFO|2025-10-05 13:52:56] tokenization_utils_base.py:2394 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/chat_template.jinja
+[INFO|2025-10-05 13:52:56] tokenization_utils_base.py:2563 >> tokenizer config file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/tokenizer_config.json
+[INFO|2025-10-05 13:52:56] tokenization_utils_base.py:2572 >> Special tokens file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/special_tokens_map.json
+[INFO|2025-10-05 13:52:56] image_processing_base.py:253 >> Image processor saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/preprocessor_config.json
+[INFO|2025-10-05 13:52:56] tokenization_utils_base.py:2394 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/chat_template.jinja
+[INFO|2025-10-05 13:52:56] tokenization_utils_base.py:2563 >> tokenizer config file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/tokenizer_config.json
+[INFO|2025-10-05 13:52:56] tokenization_utils_base.py:2572 >> Special tokens file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/special_tokens_map.json
+[INFO|2025-10-05 13:52:56] video_processing_utils.py:610 >> Video processor saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/video_preprocessor_config.json
+[INFO|2025-10-05 13:52:56] processing_utils.py:752 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-100/chat_template.jinja
+[INFO|2025-10-05 13:53:06] logging.py:143 >> {'loss': 1.7028, 'learning_rate': 1.3650e-05, 'epoch': 3.29, 'throughput': 3399.18}
+[INFO|2025-10-05 13:53:15] logging.py:143 >> {'loss': 1.6972, 'learning_rate': 1.1522e-05, 'epoch': 3.45, 'throughput': 3401.41}
+[INFO|2025-10-05 13:53:24] logging.py:143 >> {'loss': 1.6337, 'learning_rate': 9.5227e-06, 'epoch': 3.61, 'throughput': 3403.42}
+[INFO|2025-10-05 13:53:34] logging.py:143 >> {'loss': 1.6459, 'learning_rate': 7.6728e-06, 'epoch': 3.77, 'throughput': 3406.63}
+[INFO|2025-10-05 13:53:43] logging.py:143 >> {'loss': 1.6313, 'learning_rate': 5.9899e-06, 'epoch': 3.93, 'throughput': 3408.76}
+[INFO|2025-10-05 13:53:51] logging.py:143 >> {'loss': 1.6304, 'learning_rate': 4.4900e-06, 'epoch': 4.06, 'throughput': 3408.85}
+[INFO|2025-10-05 13:54:00] logging.py:143 >> {'loss': 1.6427, 'learning_rate': 3.1876e-06, 'epoch': 4.22, 'throughput': 3413.06}
+[INFO|2025-10-05 13:54:10] logging.py:143 >> {'loss': 1.6456, 'learning_rate': 2.0953e-06, 'epoch': 4.38, 'throughput': 3414.94}
+[INFO|2025-10-05 13:54:19] logging.py:143 >> {'loss': 1.6986, 'learning_rate': 1.2236e-06, 'epoch': 4.54, 'throughput': 3414.67}
+[INFO|2025-10-05 13:54:28] logging.py:143 >> {'loss': 1.6348, 'learning_rate': 5.8085e-07, 'epoch': 4.70, 'throughput': 3416.05}
+[INFO|2025-10-05 13:54:37] logging.py:143 >> {'loss': 1.6541, 'learning_rate': 1.7329e-07, 'epoch': 4.86, 'throughput': 3417.20}
+[INFO|2025-10-05 13:54:45] logging.py:143 >> {'loss': 1.5113, 'learning_rate': 4.8190e-09, 'epoch': 5.00, 'throughput': 3416.22}
+[INFO|2025-10-05 13:54:45] trainer.py:4289 >> Saving model checkpoint to saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160
+[INFO|2025-10-05 13:54:46] configuration_utils.py:763 >> loading configuration file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/config.json
+[INFO|2025-10-05 13:54:46] configuration_utils.py:839 >> Model config Qwen2_5_VLConfig {
+  "architectures": [
+    "Qwen2_5_VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 128000,
+  "max_window_layers": 70,
+  "model_type": "qwen2_5_vl",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "text_config": {
+    "architectures": [
+      "Qwen2_5_VLForConditionalGeneration"
+    ],
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "dtype": "bfloat16",
+    "eos_token_id": 151645,
+    "hidden_act": "silu",
+    "hidden_size": 2048,
+    "image_token_id": null,
+    "initializer_range": 0.02,
+    "intermediate_size": 11008,
+    "layer_types": [
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention"
+    ],
+    "max_position_embeddings": 128000,
+    "max_window_layers": 70,
+    "model_type": "qwen2_5_vl_text",
+    "num_attention_heads": 16,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 2,
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": {
+      "mrope_section": [
+        16,
+        24,
+        24
+      ],
+      "rope_type": "default",
+      "type": "default"
+    },
+    "rope_theta": 1000000.0,
+    "sliding_window": null,
+    "tie_word_embeddings": true,
+    "use_cache": true,
+    "use_sliding_window": false,
+    "video_token_id": null,
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652,
+    "vision_token_id": 151654,
+    "vocab_size": 151936
+  },
+  "transformers_version": "4.56.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "depth": 32,
+    "fullatt_block_indexes": [
+      7,
+      15,
+      23,
+      31
+    ],
+    "hidden_act": "silu",
+    "hidden_size": 1280,
+    "in_channels": 3,
+    "in_chans": 3,
+    "initializer_range": 0.02,
+    "intermediate_size": 3420,
+    "model_type": "qwen2_5_vl",
+    "num_heads": 16,
+    "out_hidden_size": 2048,
+    "patch_size": 14,
+    "spatial_merge_size": 2,
+    "spatial_patch_size": 14,
+    "temporal_patch_size": 2,
+    "tokens_per_second": 2,
+    "window_size": 112
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 151936
+}
+
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2394 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/chat_template.jinja
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2563 >> tokenizer config file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/tokenizer_config.json
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2572 >> Special tokens file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/special_tokens_map.json
+[INFO|2025-10-05 13:54:46] image_processing_base.py:253 >> Image processor saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/preprocessor_config.json
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2394 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/chat_template.jinja
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2563 >> tokenizer config file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/tokenizer_config.json
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2572 >> Special tokens file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/special_tokens_map.json
+[INFO|2025-10-05 13:54:46] video_processing_utils.py:610 >> Video processor saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/video_preprocessor_config.json
+[INFO|2025-10-05 13:54:46] processing_utils.py:752 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/checkpoint-160/chat_template.jinja
+[INFO|2025-10-05 13:54:46] trainer.py:2808 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+[INFO|2025-10-05 13:54:46] image_processing_base.py:253 >> Image processor saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/preprocessor_config.json
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2394 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/chat_template.jinja
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2563 >> tokenizer config file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/tokenizer_config.json
+[INFO|2025-10-05 13:54:46] tokenization_utils_base.py:2572 >> Special tokens file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/special_tokens_map.json
+[INFO|2025-10-05 13:54:46] video_processing_utils.py:610 >> Video processor saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/video_preprocessor_config.json
+[INFO|2025-10-05 13:54:46] processing_utils.py:752 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/chat_template.jinja
+[INFO|2025-10-05 13:54:47] trainer.py:4289 >> Saving model checkpoint to saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22
+[INFO|2025-10-05 13:54:47] configuration_utils.py:763 >> loading configuration file /root/.cache/modelscope/hub/models/Qwen/Qwen2___5-VL-3B-Instruct/config.json
+[INFO|2025-10-05 13:54:47] configuration_utils.py:839 >> Model config Qwen2_5_VLConfig {
+  "architectures": [
+    "Qwen2_5_VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "dtype": "bfloat16",
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 128000,
+  "max_window_layers": 70,
+  "model_type": "qwen2_5_vl",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "text_config": {
+    "architectures": [
+      "Qwen2_5_VLForConditionalGeneration"
+    ],
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "dtype": "bfloat16",
+    "eos_token_id": 151645,
+    "hidden_act": "silu",
+    "hidden_size": 2048,
+    "image_token_id": null,
+    "initializer_range": 0.02,
+    "intermediate_size": 11008,
+    "layer_types": [
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention",
+      "full_attention"
+    ],
+    "max_position_embeddings": 128000,
+    "max_window_layers": 70,
+    "model_type": "qwen2_5_vl_text",
+    "num_attention_heads": 16,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 2,
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": {
+      "mrope_section": [
+        16,
+        24,
+        24
+      ],
+      "rope_type": "default",
+      "type": "default"
+    },
+    "rope_theta": 1000000.0,
+    "sliding_window": null,
+    "tie_word_embeddings": true,
+    "use_cache": true,
+    "use_sliding_window": false,
+    "video_token_id": null,
+    "vision_end_token_id": 151653,
+    "vision_start_token_id": 151652,
+    "vision_token_id": 151654,
+    "vocab_size": 151936
+  },
+  "transformers_version": "4.56.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "depth": 32,
+    "fullatt_block_indexes": [
+      7,
+      15,
+      23,
+      31
+    ],
+    "hidden_act": "silu",
+    "hidden_size": 1280,
+    "in_channels": 3,
+    "in_chans": 3,
+    "initializer_range": 0.02,
+    "intermediate_size": 3420,
+    "model_type": "qwen2_5_vl",
+    "num_heads": 16,
+    "out_hidden_size": 2048,
+    "patch_size": 14,
+    "spatial_merge_size": 2,
+    "spatial_patch_size": 14,
+    "temporal_patch_size": 2,
+    "tokens_per_second": 2,
+    "window_size": 112
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 151936
+}
+
+[INFO|2025-10-05 13:54:47] tokenization_utils_base.py:2394 >> chat template saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/chat_template.jinja
+[INFO|2025-10-05 13:54:47] tokenization_utils_base.py:2563 >> tokenizer config file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/tokenizer_config.json
+[INFO|2025-10-05 13:54:47] tokenization_utils_base.py:2572 >> Special tokens file saved in saves/Qwen2.5-VL-3B-Instruct/lora/train_2025-10-05-13-49-22/special_tokens_map.json
+[WARNING|2025-10-05 13:54:47] logging.py:148 >> No metric eval_loss to plot.
+[WARNING|2025-10-05 13:54:47] logging.py:148 >> No metric eval_accuracy to plot.
+[INFO|2025-10-05 13:54:47] modelcard.py:456 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}

@@ -1,0 +1,71 @@
+flowchart TD
+    subgraph 启动层
+        A[用户启动系统] --> B{选择运行模式}
+        B -->|命令行模式| C[main.py启动CLI界面]
+        B -->|API服务模式| D[main.py启动FastAPI服务]
+        B -->|批量生成模式| E[main.py执行批量生成]
+    end
+
+    subgraph 核心管理层
+        C --> F[TianjinNewYearPaintingSystem初始化]
+        D --> F
+        E --> F
+        F --> G[TianjinNewYearPaintingAgent初始化]
+    end
+
+    subgraph 模型层
+        G -->|加载| H[RecommendationModel推荐模型]
+        G -->|加载| I[GenerationModel生成模型]
+        G -->|加载| J[QAModel问答模型]
+    end
+
+    subgraph 数据处理层
+        H --> K[data_loader.py数据加载器]
+        H --> L[data_preprocessor.py数据预处理器]
+        I --> K
+        J --> K
+        K -->|加载| M[CSV数据文件]
+        L -->|处理| N[用户画像/物品画像/评分矩阵]
+    end
+
+    subgraph 服务层
+        D --> O[app.py提供API接口]
+        O -->|调用| G
+        O -->|提供| P1[/api/recommend/]
+        O -->|提供| P2[/api/generate/]
+        O -->|提供| P3[/api/qa/]
+        O -->|提供| P4[/api/analyze_image/]
+        O -->|提供| P5[/api/update_preferences/]
+        O -->|提供| P6[/api/health/]
+    end
+
+    subgraph 工具层
+        Q[common_utils.py通用工具] --> G
+        Q --> K
+        Q --> L
+        Q --> H
+        Q --> I
+        Q --> J
+        Q --> O
+    end
+
+    subgraph 交互层
+        C -->|处理| R[用户输入]
+        R -->|文本/命令| G
+        G -->|返回| S[系统响应]
+        S --> C
+    end
+
+    M -->|包含| M1[年画作品.csv]
+    M -->|包含| M2[用户信息.csv]
+    M -->|包含| M3[用户浏览记录.csv]
+    M -->|包含| M4[用户评价.csv]
+    M -->|包含| M5[用户收藏记录.csv]
+    M -->|包含| M6[用户作品打分.csv]
+
+    G -->|调用| H
+    G -->|调用| I
+    G -->|调用| J
+
+    E -->|读取| T[提示词文件]
+    E -->|保存| U[生成结果/图像]

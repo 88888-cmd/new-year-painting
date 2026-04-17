@@ -1,0 +1,108 @@
+# LoRA 训练配置文件
+# 使用说明：根据你的数据集和需求修改以下参数
+
+[general]
+# 预训练模型路径 - 下载 SD 1.5 模型后修改此路径
+pretrained_model_name_or_path = "/home/ubuntu/lora-training/models/sd-v1-5.safetensors"
+# 输出目录
+output_dir = "/home/ubuntu/lora-training/output"
+# 输出模型名称
+output_name = "my_lora"
+
+# 训练设置
+[training]
+# 训练步数（根据数据集大小调整，建议 1000-3000 步）
+max_train_steps = 2000
+# 训练周期数（可选，与 max_train_steps 二选一）
+# max_train_epochs = 10
+
+# 学习率（非常重要！）
+learning_rate = 1e-4
+# U-Net 学习率（可选，默认使用 learning_rate）
+unet_lr = 1e-4
+# Text Encoder 学习率（可选，默认使用 learning_rate）
+text_encoder_lr = 5e-5
+
+# 批次大小（根据显存调整，L40S 46GB 可以用 4-8）
+train_batch_size = 4
+# 梯度累积步数（如果显存不足，增大此值）
+gradient_accumulation_steps = 1
+
+# LoRA 设置
+[lora]
+# LoRA rank（秩），越大模型容量越大，4-128 之间
+network_dim = 32
+# LoRA alpha，通常设置为 rank 的一半或等于 rank
+network_alpha = 16
+
+# 优化器设置
+[optimizer]
+# 优化器类型：AdamW8bit（节省显存）, AdamW, Lion, Prodigy, DAdaptation 等
+optimizer_type = "AdamW8bit"
+# 学习率调度器
+lr_scheduler = "cosine_with_restarts"
+# 预热步数（占总步数的 5-10%）
+lr_warmup_steps = 100
+# cosine_with_restarts 的重启次数
+lr_scheduler_num_cycles = 3
+
+# 数据集设置
+[dataset]
+# 训练数据路径
+train_data_dir = "/home/ubuntu/lora-training/dataset/train"
+# 分辨率（SD 1.5 推荐 512，也可以用 768）
+resolution = 512
+# 启用 bucket（自动调整图片尺寸）
+enable_bucket = true
+# 最小 bucket 分辨率
+min_bucket_reso = 320
+# 最大 bucket 分辨率
+max_bucket_reso = 960
+# Bucket 步进
+bucket_reso_steps = 64
+
+# 图像增强
+[augmentation]
+# 随机水平翻转
+flip_aug = true
+# 颜色抖动（可选，增加数据多样性）
+# color_aug = false
+# 随机裁剪（可选）
+# random_crop = false
+
+# 其他设置
+[misc]
+# 混合精度训练（fp16 或 bf16）
+mixed_precision = "fp16"
+# 保存精度
+save_precision = "fp16"
+# 每 N 步保存一次模型
+save_every_n_steps = 500
+# 保存状态（用于恢复训练）
+save_state = true
+# 缓存 latents（加速训练）
+cache_latents = true
+# 使用 xformers（节省显存）
+xformers = true
+# 梯度检查点（节省显存，但会略微降低速度）
+gradient_checkpointing = true
+
+# 日志设置
+[logging]
+# 日志目录
+logging_dir = "/home/ubuntu/lora-training/logs"
+# 日志类型（tensorboard 或 wandb）
+log_with = "tensorboard"
+# 每 N 步记录一次
+log_prefix = "lora-sd15"
+
+# 采样设置（可选，训练过程中生成样例图）
+[sample]
+# 是否启用采样
+enable_sample = false
+# 每 N 步生成一次样例
+# sample_every_n_steps = 500
+# 样例提示词文件
+# sample_prompts = "/home/ubuntu/lora-training/sample_prompts.txt"
+# 采样器
+# sample_sampler = "euler_a"
